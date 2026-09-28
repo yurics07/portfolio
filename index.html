@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Yuri Cabral - Full-Stack Developer" />
+  <title>Yuri Cabral | Full-Stack Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR CUSTOMIZADO ===== -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- ===== PROGRESS BAR ===== -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- ===== PARTÍCULAS DE FUNDO ===== -->
+  <canvas id="particles-bg"></canvas>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Yuri<span class="logo-accent">Cabral</span></span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#sobre" class="nav-link"><span class="nav-num">01.</span> Sobre</a></li>
+          <li><a href="#resumo" class="nav-link"><span class="nav-num">02.</span> Resumo</a></li>
+          <li><a href="#portfolio" class="nav-link"><span class="nav-num">03.</span> Portfólio</a></li>
+          <li><a href="#servicos" class="nav-link"><span class="nav-num">04.</span> Serviços</a></li>
+          <li><a href="#contato" class="nav-link"><span class="nav-num">05.</span> Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="container hero-content">
+      <p class="hero-greeting">
+        <span class="wave">👋</span> Olá, seja bem-vindo ao meu universo
+      </p>
+
+      <h1 class="hero-title">
+        Eu sou <span class="gradient-text">Yuri Cabral</span>
+      </h1>
+
+      <div class="hero-role">
+        <span class="role-prefix">&lt;/&gt;</span>
+        <span class="typed-text" id="typed-text"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+
+      <p class="hero-description">
+        Transformo ideias em experiências digitais memoráveis.
+        Especialista em criar aplicações web, mobile e desktop de alto impacto.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#contato" class="btn btn-primary">
+          <span>Vamos conversar</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#portfolio" class="btn btn-ghost">
+          <i class="fa-solid fa-eye"></i>
+          <span>Ver projetos</span>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">// 01. Sobre mim</span>
+        <h2 class="section-title">Quem sou eu</h2>
+        <p class="section-subtitle">Um pouco da minha trajetória</p>
+      </div>
+
+      <div class="sobre-grid">
+        <div class="sobre-text" data-reveal>
+          <p class="lead">
+            Entrei no curso de <strong>Desenvolvimento de Sistemas</strong> em setembro de 2024.
+            Os primeiros semestres foram desafiadores e, muitas vezes, parecia que eu estava
+            apenas no começo — mesmo com todo o esforço.
+          </p>
+          <p>
+            Com o tempo, fui aprendendo, superando dificuldades e percebendo o quanto evoluí
+            desde que comecei. Hoje, encaro cada projeto como uma oportunidade de criar algo
+            único e memorável. 🚀
+          </p>
+
+          <h3 class="sub-heading"><i class="fa-solid fa-user"></i> Perfil</h3>
+          <ul class="perfil-lista">
+            <li><span class="perfil-label">Nome</span><span class="perfil-value">Yuri Cabral Severino</span></li>
+            <li><span class="perfil-label">Nascimento</span><span class="perfil-value">07 de Janeiro de 2006</span></li>
+            <li><span class="perfil-label">Cargo</span><span class="perfil-value">Full-Stack Developer</span></li>
+            <li><span class="perfil-label">Email</span><span class="perfil-value">yuric007515@gmail.com</span></li>
+                    </ul>
+        </div>
+
+        <div class="skills" data-reveal>
+          <h3 class="sub-heading"><i class="fa-solid fa-bolt"></i> Skills</h3>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span><i class="fa-brands fa-html5"></i> Front-end</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="100%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span><i class="fa-solid fa-server"></i> Back-end</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="100%"></div></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span><i class="fa-solid fa-globe"></i> Web</span>
+            </div>
+            <div class="bar"><div class="fill" data-width="100%"></div></div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RESUMO ===== -->
+  <section class="section section-alt" id="resumo">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">// 02. Trajetória</span>
+        <h2 class="section-title">Resumo</h2>
+        <p class="section-subtitle">Minha jornada na programação</p>
+      </div>
+
+      <h3 class="sub-heading" data-reveal><i class="fa-solid fa-timeline"></i> Linha do Tempo</h3>
+      <div class="timeline" data-reveal>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Junho de 2022 — O início</span>
+          <h4>Primeiro contato com programação</h4>
+          <p>
+            Foi nesse período que tive meu primeiro contato com a programação, especialmente com Arduino. Meu primeiro projeto foi um leitor de notas, que despertou meu interesse pela área e serviu como ponto de partida para minha jornada na programação.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Setembro de 2024 — Entrando de cabeça na programação</span>
+          <h4>Ingresso no SENAI</h4>
+          <p>
+            Em setembro de 2024, comecei uma nova etapa da minha trajetória ao ingressar no SENAI. A partir desse momento, passei a estudar programação de forma mais aprofundada, aprendendo os principais fundamentos, lógica de programação e conceitos essenciais para desenvolver projetos.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Novembro de 2024 — Arduino, eletromecânica e Java</span>
+          <h4>Ampliação de conhecimentos</h4>
+          <p>
+            Em novembro, ampliei meus conhecimentos em diferentes áreas. Voltei a trabalhar com Arduino, enquanto também aprendia fundamentos de eletromecânica. Além disso, tive meu primeiro contato com Java, começando a desenvolver uma base mais sólida na programação.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Abril de 2025 — Front-End e Back-End</span>
+          <h4>Desenvolvimento Full-Stack</h4>
+          <p>
+            Em abril de 2025, comecei a estudar desenvolvimento Front-End, aprendendo a construir e estruturar interfaces. Ao mesmo tempo, passei a trabalhar com Back-End, entendendo como as diferentes partes de uma aplicação podem se comunicar e funcionar em conjunto.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Junho de 2025 — Banco de Dados</span>
+          <h4>Um dos períodos mais desafiadores</h4>
+          <p>
+            Junho foi um dos períodos mais desafiadores da minha trajetória. Foi quando comecei a estudar Banco de Dados, uma área que trouxe bastante dificuldade, mas também proporcionou um dos maiores aprendizados até então. Foi um período de muitos desafios, erros e descobertas que contribuíram para minha evolução como programador.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Setembro de 2025 — Spring Boot</span>
+          <h4>Projeto completo com Back-End e Banco de Dados</h4>
+          <p>
+            Em setembro, comecei a trabalhar com Spring Boot em um dos projetos mais importantes da minha formação. Foi nesse momento que pude colocar em prática diversos conhecimentos adquiridos anteriormente, desenvolvendo praticamente um site completo, com integração entre Back-End e Banco de Dados.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Fevereiro de 2026 — Uma pausa necessária</span>
+          <h4>Afastamento das aulas</h4>
+          <p>
+            Em fevereiro de 2026, precisei me afastar das aulas por motivos pessoais. Mesmo estando afastado, uma frase dita pelo professor continuou comigo:
+          </p>
+          <blockquote class="timeline-quote">
+            "Não é porque vocês estão de férias que podem parar de praticar."
+          </blockquote>
+          <p>
+            Essa frase acabou se tornando um incentivo para continuar buscando conhecimento mesmo fora da sala de aula.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Maio de 2026 — Um novo desafio</span>
+          <h4>Curso de Python</h4>
+          <p>
+            Como continuei afastado das aulas, decidi aproveitar esse período para aprender algo novo. Foi então que comecei um curso de Python, buscando ampliar meus conhecimentos e conhecer uma nova linguagem de programação.
+          </p>
+        </div>
+        <div class="timeline-item highlight">
+          <div class="timeline-dot"></div>
+          <span class="timeline-date">Agosto de 2026 — Um novo começo</span>
+          <h4>Retorno ao SENAI</h4>
+          <p>
+            Em agosto de 2026, retornei às aulas no SENAI, agora no período noturno. Nessa nova etapa, comecei a estudar ESP32 e também Implantação de Sistemas, dando continuidade à minha formação e ampliando meus conhecimentos em tecnologia e desenvolvimento.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFÓLIO ===== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">// 03. Trabalhos</span>
+        <h2 class="section-title">Portfólio</h2>
+        <p class="section-subtitle">Confira alguns projetos que desenvolvi</p>
+      </div>
+
+      <div class="portfolio-filters" data-reveal>
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolio-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== SERVIÇOS ===== -->
+  <section class="section section-alt" id="servicos">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">// 04. Serviços</span>
+        <h2 class="section-title">Como posso te ajudar?</h2>
+        <p class="section-subtitle">Soluções sob medida para suas necessidades</p>
+      </div>
+
+      <div class="servicos-grid">
+        <div class="servico-card" data-reveal>
+          <div class="servico-icon"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>Sistema Integrado</h3>
+          <p>Desenvolvimento multiplataforma com dispositivos que se comunicam via internet.</p>
+          <span class="servico-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div class="servico-card" data-reveal>
+          <div class="servico-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Aplicação Web</h3>
+          <p>Landing pages, sites pessoais, comerciais, lojas virtuais e sistemas complexos.</p>
+          <span class="servico-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div class="servico-card" data-reveal>
+          <div class="servico-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Aplicação Mobile</h3>
+          <p>Aplicativos híbridos ou nativos para Android e iOS.</p>
+          <span class="servico-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div class="servico-card" data-reveal>
+          <div class="servico-icon"><i class="fa-solid fa-desktop"></i></div>
+          <h3>Aplicação Desktop</h3>
+          <p>Software multiplataforma para Windows, Linux e Mac OS.</p>
+          <span class="servico-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+        <div class="servico-card" data-reveal>
+          <div class="servico-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Design Gráfico</h3>
+          <p>Panfletos, flyers, convites, banners, avatars e muito mais.</p>
+          <span class="servico-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+        </div>
+      </div>
+
+      
+        <div class="stat">
+          <div class="stat-icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3 class="counter" data-target="700">0</h3>
+          <p>Copos de Café</p>
+        </div>
+        <div class="stat">
+          <div class="stat-icon"><i class="fa-solid fa-clock"></i></div>
+          <h3 class="counter" data-target="4200">0</h3>
+          <p>Horas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="section" id="contato">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag">// 05. Contato</span>
+        <h2 class="section-title">Vamos criar algo incrível</h2>
+        <p class="section-subtitle">Tem um projeto em mente? Me conte sobre ele!</p>
+      </div>
+
+      <div class="contato-grid">
+        <form class="contato-form" id="contato-form" data-reveal>
+          <div class="input-group">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" name="email" placeholder="Seu e-mail" required />
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-tag"></i>
+            <input type="text" name="assunto" placeholder="Assunto" required />
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-comment-dots"></i>
+            <textarea name="mensagem" rows="6" placeholder="Sua mensagem..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-submit">
+            <span>Enviar mensagem</span>
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-feedback" id="form-feedback"></p>
+        </form>
+
+        <aside class="contato-info" data-reveal>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h4>Localização</h4>
+              <p>Criciuma — SC<br />Brasil</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Envie um e-mail</h4>
+              <p>yuri.severino@gmail.com</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <h4>Chamada ou WhatsApp</h4>
+              <p>(+55) 48 9935-5941</p>
+            </div>
+          </div>
+          <div class="info-card highlight">
+            <div class="info-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <div>
+              <h4>Disponibilidade</h4>
+              <p>Disponível para novos projetos</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-content">
+
+      <!-- Logo -->
+      <p class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Yuri<span class="logo-accent">Cabral</span><span class="logo-bracket">/&gt;</span>
+      </p>
+
+      <!-- Redes sociais -->
+<div class="footer-socials">
+  <a href="https://github.com/yurics07" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/yuri-cabral-73557543b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+    <i class="fa-brands fa-linkedin-in"></i>
+  </a>
+  <a href="https://www.instagram.com/yuri_cabra1/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link">
+    <i class="fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://wa.me/5548999355941" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="social-link">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+  <a href="mailto:yuric007515@gmail.com" aria-label="Email" class="social-link">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+</div>
+
+      <!-- Divisor -->
+      <div class="footer-divider"></div>
+
+      <!-- Copyright -->
+      <p class="footer-copy">&copy; <span id="ano"></span> Yuri Cabral. Todos os direitos reservados.</p>
+      <p class="footer-made">Feito com <i class="fa-solid fa-heart"></i> e muito <i class="fa-solid fa-mug-hot"></i></p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
